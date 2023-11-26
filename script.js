@@ -3,9 +3,9 @@ function stringChop(str, size) {
 	if(str===null){
 		return [];
 	}
-	let i=1,ans=[];
+	let i=0,ans=[];
 	while(i<=str.length-1){
-		ans.push(str.slice(1,i+size));
+		ans.push(str.slice(i,i+size));
 		i=i+size;
 	}
 	return ans;
