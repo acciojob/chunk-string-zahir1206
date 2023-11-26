@@ -3,8 +3,8 @@ function stringChop(str, size) {
 	if(str===null){
 		return [];
 	}
-	let i=0,ans=[];
-	while(i<=str.length){
+	let i=1,ans=[];
+	while(i<=str.length-1){
 		ans.push(str.slice(1,i+size));
 		i=i+size;
 	}
